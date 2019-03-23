@@ -26,7 +26,7 @@ if __name__ == '__main__':
     section_to_scrape = input(">>> Introduzca la sección a recolectar\n[+]")
     pages       = input(">>> Introduzca las paginas a mirar\n[+]")
 
-    arguments_elpais   = "-a section={0} -a pages={1} -o data/dataset/{0}".format(section_to_scrape, pages)
+    arguments_elpais   = "-a section={0} -a pages={1} -o ../../data/{0}".format(section_to_scrape, pages)
 
     arguments = [arguments_elpais]
     spiders   = ['news_bot_elpais']
